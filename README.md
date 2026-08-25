@@ -1,36 +1,89 @@
 # Microsoft Fabric 🚀
 
-A comprehensive learning and hands-on repository covering **Microsoft Fabric**, Microsoft's end-to-end analytics and data platform. This repository documents concepts, practical implementations, workflows, notebooks, pipelines, data engineering, data warehousing, OneLake, Lakehouse, and Power BI.
+<div align="center">
 
-The goal of this repository is to demonstrate how modern data platforms can be used to **ingest, transform, process, analyze, visualize, and deliver data-driven insights** using Microsoft Fabric.
+### ☁️ End-to-End Data & Analytics Platform
+
+**OneLake • Lakehouse • Data Factory • Pipelines • Dataflows Gen2 • Notebooks • Data Warehouse • SQL • Power BI**
+
+<br>
+
+![Microsoft Fabric](https://img.shields.io/badge/Microsoft%20Fabric-Analytics-0078D4?style=for-the-badge\&logo=microsoft)
+![OneLake](https://img.shields.io/badge/OneLake-Data%20Lake-0078D4?style=for-the-badge\&logo=microsoft)
+![Python](https://img.shields.io/badge/Python-Data%20Engineering-3776AB?style=for-the-badge\&logo=python)
+![SQL](https://img.shields.io/badge/SQL-Analytics-CC2927?style=for-the-badge\&logo=microsoftsqlserver)
+![Power BI](https://img.shields.io/badge/Power%20BI-Business%20Intelligence-F2C811?style=for-the-badge\&logo=powerbi)
+
+</div>
 
 ---
 
-## 📌 About Microsoft Fabric
+## 📌 About This Repository
+
+A comprehensive learning and hands-on repository covering **Microsoft Fabric**, Microsoft's end-to-end analytics and data platform.
+
+This repository documents concepts, practical implementations, workflows, notebooks, pipelines, data engineering, data warehousing, OneLake, Lakehouse, and Power BI.
+
+The goal of this repository is to demonstrate how modern data platforms can be used to:
+
+```text
+📥 INGEST
+    ↓
+💾 STORE
+    ↓
+🧹 CLEAN
+    ↓
+🔄 TRANSFORM
+    ↓
+⚙️ PROCESS
+    ↓
+🧮 ANALYZE
+    ↓
+📊 VISUALIZE
+    ↓
+💡 DELIVER INSIGHTS
+```
+
+---
+
+# 📌 About Microsoft Fabric
 
 **Microsoft Fabric** is an integrated, cloud-based analytics platform that brings together data engineering, data integration, data warehousing, data science, real-time analytics, and business intelligence in a unified environment.
 
 Fabric provides a centralized ecosystem where data can move through the complete analytics lifecycle:
 
 ```text
-Data Sources
-     ↓
-Data Ingestion
-     ↓
-Data Storage
-     ↓
-Data Transformation
-     ↓
-Data Engineering / Data Warehouse
-     ↓
-Data Analysis
-     ↓
-Power BI
-     ↓
-Business Insights
+                    ☁️ MICROSOFT FABRIC
+                           │
+                           ▼
+                    📥 DATA SOURCES
+                           │
+                           ▼
+                    🔄 DATA INGESTION
+                           │
+                           ▼
+                     🌐 ONELAKE
+                           │
+                           ▼
+                    🏞️ LAKEHOUSE
+                           │
+                           ▼
+                 🧹 TRANSFORM & PROCESS
+                           │
+                 ┌─────────┴─────────┐
+                 ▼                   ▼
+          📓 NOTEBOOKS         🗄️ WAREHOUSE
+                 │                   │
+                 └─────────┬─────────┘
+                           ▼
+                    🧠 SEMANTIC MODEL
+                           │
+                           ▼
+                      📊 POWER BI
+                           │
+                           ▼
+                    💡 BUSINESS INSIGHTS
 ```
-
-A major component of Fabric is **OneLake**, which acts as a unified data lake for the organization.
 
 ---
 
@@ -39,26 +92,33 @@ A major component of Fabric is **OneLake**, which acts as a unified data lake fo
 The major components explored in this repository include:
 
 ```text
-                         Microsoft Fabric
-                                │
-             ┌──────────────────┼──────────────────┐
-             │                  │                  │
-          OneLake            Workspaces         Capacity
-             │                  │                  │
-             └──────────────────┼──────────────────┘
-                                │
-        ┌───────────────────────┼────────────────────────┐
-        │                       │                        │
-   Data Engineering       Data Integration        Data Warehouse
-        │                       │                        │
-     Lakehouse              Data Factory           Warehouse
-     Notebooks               Pipelines              SQL
-        │                       │
-        └───────────────────────┼───────────────────────┘
-                                │
-                         Data Analytics
-                                │
-                            Power BI
+                         ☁️ MICROSOFT FABRIC
+                                  │
+             ┌────────────────────┼────────────────────┐
+             │                    │                    │
+             ▼                    ▼                    ▼
+          🌐 ONELAKE          🏢 WORKSPACES       ⚡ CAPACITY
+             │                    │                    │
+             └────────────────────┼────────────────────┘
+                                  │
+       ┌──────────────────────────┼──────────────────────────┐
+       │                          │                          │
+       ▼                          ▼                          ▼
+ 🔧 DATA FACTORY             🏞️ LAKEHOUSE              🗄️ WAREHOUSE
+       │                          │                          │
+       ▼                          ▼                          ▼
+ 🔄 PIPELINES                 📓 NOTEBOOKS                 🧮 SQL
+       │                          │                          │
+       └──────────────────────────┼──────────────────────────┘
+                                  │
+                                  ▼
+                           🧠 DATA ANALYTICS
+                                  │
+                                  ▼
+                              📊 POWER BI
+                                  │
+                                  ▼
+                           💡 INSIGHTS
 ```
 
 ---
@@ -67,29 +127,24 @@ The major components explored in this repository include:
 
 This repository covers the following Microsoft Fabric concepts:
 
-* Microsoft Fabric Overview
-* Fabric Architecture
-* Workspaces
-* Fabric Capacity
-* Domains
-* OneLake
-* Lakehouse
-* Data Factory
-* Data Pipelines
-* Dataflows Gen2
-* Notebooks
-* Data Engineering
-* Data Warehouse
-* SQL Analytics
-* Power BI
-* Data Ingestion
-* Data Transformation
-* Data Cleaning
-* ETL / ELT
-* Medallion Architecture
-* Data Modeling
-* Data Visualization
-* End-to-End Data Workflows
+| #  | Topic                     | Area                  |
+| -- | ------------------------- | --------------------- |
+| 01 | 🚀 Microsoft Fabric       | Platform Overview     |
+| 02 | 🏢 Workspaces             | Resource Management   |
+| 03 | ⚡ Fabric Capacity         | Platform Capacity     |
+| 04 | 🌐 OneLake                | Data Foundation       |
+| 05 | 🏞️ Lakehouse             | Data Engineering      |
+| 06 | 🔧 Data Factory           | Data Integration      |
+| 07 | 🔄 Data Pipelines         | Orchestration         |
+| 08 | 🔀 Dataflows Gen2         | Data Transformation   |
+| 09 | 📓 Notebooks              | Data Processing       |
+| 10 | ⚙️ Data Engineering       | Data Preparation      |
+| 11 | 🗄️ Data Warehouse        | Data Warehousing      |
+| 12 | 🧮 SQL Analytics          | Data Analysis         |
+| 13 | 🧠 Semantic Models        | Data Modeling         |
+| 14 | 📊 Power BI               | Business Intelligence |
+| 15 | 🥇 Medallion Architecture | Data Architecture     |
+| 16 | 🔁 End-to-End Workflows   | Analytics             |
 
 ---
 
@@ -97,29 +152,26 @@ This repository covers the following Microsoft Fabric concepts:
 
 A **Workspace** is a collaborative environment in Microsoft Fabric where users can create, organize, manage, and share Fabric items.
 
-Typical workspace items include:
-
-* Lakehouses
-* Warehouses
-* Notebooks
-* Pipelines
-* Dataflows
-* Semantic Models
-* Power BI Reports
-* Dashboards
-
-Example workspace structure:
+Typical workspace structure:
 
 ```text
-Fabric Workspace
+🏢 Fabric Workspace
 │
-├── 📁 Lakehouse
+├── 🏞️ Lakehouse
+│
 ├── 📓 Notebooks
+│
 ├── 🔄 Pipelines
-├── 🔀 Dataflows
+│
+├── 🔀 Dataflows Gen2
+│
 ├── 🗄️ Warehouse
-├── 📊 Semantic Model
-└── 📈 Power BI Report
+│
+├── 🧠 Semantic Model
+│
+├── 📊 Power BI Report
+│
+└── 📈 Dashboard
 ```
 
 ---
@@ -128,21 +180,20 @@ Fabric Workspace
 
 **OneLake** is the unified data lake foundation of Microsoft Fabric.
 
-It provides a centralized location for organizational data and helps eliminate unnecessary data duplication across different analytics workloads.
+It provides a centralized location for organizational data and helps create a common data foundation across Fabric workloads.
 
 ```text
-                    OneLake
-                       │
-        ┌──────────────┼──────────────┐
-        │              │              │
-     Lakehouse      Warehouse      Other Data
-        │
-   ┌────┴────┐
-   │         │
-Tables    Files
+                         🌐 ONELAKE
+                            │
+             ┌──────────────┼──────────────┐
+             │              │              │
+             ▼              ▼              ▼
+        🏞️ Lakehouse    🗄️ Warehouse   📊 Analytics
+             │              │              │
+             └──────────────┼──────────────┘
+                            ▼
+                     Unified Data Layer
 ```
-
-OneLake can support different Fabric workloads while maintaining a unified data foundation.
 
 ---
 
@@ -150,7 +201,7 @@ OneLake can support different Fabric workloads while maintaining a unified data 
 
 A **Lakehouse** combines capabilities of a data lake and a data warehouse.
 
-It can store:
+It can work with:
 
 * Structured data
 * Semi-structured data
@@ -158,24 +209,38 @@ It can store:
 * Tables
 * Files
 
-A typical Lakehouse contains:
+### Lakehouse Structure
 
 ```text
-Lakehouse
+🏞️ LAKEHOUSE
 │
-├── Files
-│   ├── CSV
-│   ├── JSON
-│   └── Other Files
+├── 📁 FILES
+│   ├── 📄 CSV
+│   ├── 📄 JSON
+│   └── 📄 Other Files
 │
-└── Tables
-    ├── Customer
-    ├── Sales
-    ├── Product
-    └── Transactions
+└── 🗃️ TABLES
+    ├── 👤 Customer
+    ├── 💰 Sales
+    ├── 📦 Product
+    └── 🛒 Transactions
 ```
 
-Lakehouses are particularly useful for data engineering and analytics workloads.
+### Lakehouse Workflow
+
+```text
+📁 Raw Files
+     ↓
+🏞️ Lakehouse
+     ↓
+📓 Notebook
+     ↓
+🧹 Data Cleaning
+     ↓
+🔄 Transformation
+     ↓
+🗃️ Analytical Tables
+```
 
 ---
 
@@ -192,20 +257,27 @@ It can be used to:
 * Automate data movement
 * Build data pipelines
 
-Example:
+### Data Factory Flow
 
 ```text
-CSV / Database / API
-        ↓
-   Data Factory
-        ↓
-    Pipeline
-        ↓
-    Lakehouse
-        ↓
- Transformation
-        ↓
-   Power BI
+📁 CSV
+  │
+🗄️ Database
+  │
+🌐 API
+  │
+  └──────────────┐
+                 ▼
+          🔧 DATA FACTORY
+                 │
+                 ▼
+            🔄 PIPELINE
+                 │
+                 ▼
+             🌐 ONELAKE
+                 │
+                 ▼
+            🏞️ LAKEHOUSE
 ```
 
 ---
@@ -214,55 +286,51 @@ CSV / Database / API
 
 A **Pipeline** is used to orchestrate and automate data workflows.
 
-A basic pipeline can be designed as:
+### Basic Pipeline
 
 ```text
-Source
-  ↓
-Copy Data
-  ↓
-Lakehouse
-  ↓
-Data Transformation
-  ↓
-Notebook
-  ↓
-Final Table
+┌──────────────────┐
+│ 📁 DATA SOURCE   │
+└────────┬─────────┘
+         ↓
+┌──────────────────┐
+│ 🔄 COPY DATA     │
+│    ACTIVITY      │
+└────────┬─────────┘
+         ↓
+┌──────────────────┐
+│ 🏞️ LAKEHOUSE     │
+└────────┬─────────┘
+         ↓
+┌──────────────────┐
+│ 📓 NOTEBOOK      │
+│    ACTIVITY      │
+└────────┬─────────┘
+         ↓
+┌──────────────────┐
+│ 🧹 CLEAN &       │
+│ 🔄 TRANSFORM     │
+└────────┬─────────┘
+         ↓
+┌──────────────────┐
+│ 🗃️ FINAL TABLE   │
+└────────┬─────────┘
+         ↓
+┌──────────────────┐
+│ 📊 POWER BI      │
+└──────────────────┘
 ```
 
-### Example Pipeline Workflow
+### Pipeline Features
 
-```text
-CSV File
-   │
-   ▼
-Copy Data Activity
-   │
-   ▼
-Lakehouse Files
-   │
-   ▼
-Notebook Activity
-   │
-   ▼
-Clean & Transform Data
-   │
-   ▼
-Lakehouse Table
-   │
-   ▼
-Power BI
-```
-
-Pipelines can also be configured with:
-
-* Activities
-* Parameters
-* Variables
-* Scheduling
-* Dependencies
-* Monitoring
-* Error handling
+* ⚙️ Activities
+* 🔗 Dependencies
+* 🎛️ Parameters
+* 📦 Variables
+* ⏰ Scheduling
+* 📊 Monitoring
+* 🚨 Error Handling
+* 🔄 Automated Execution
 
 ---
 
@@ -270,25 +338,25 @@ Pipelines can also be configured with:
 
 Microsoft Fabric Notebooks provide an interactive environment for data engineering, data analysis, and data transformation.
 
-Python and Spark can be used to process large datasets.
+Python and Spark can be used to process and analyze datasets.
 
-Typical notebook workflow:
+### Notebook Workflow
 
 ```text
-Load Data
-    ↓
-Inspect Data
-    ↓
-Clean Data
-    ↓
-Transform Data
-    ↓
-Analyze Data
-    ↓
-Save Results
+📥 LOAD DATA
+     ↓
+🔍 EXPLORE DATA
+     ↓
+🧹 CLEAN DATA
+     ↓
+🔄 TRANSFORM DATA
+     ↓
+📊 ANALYZE DATA
+     ↓
+💾 SAVE RESULTS
 ```
 
-### Example Notebook Operations
+### Example Notebook
 
 ```python
 # Read data
@@ -328,20 +396,28 @@ Common operations include:
 * Joining datasets
 * Aggregating data
 
-Example:
+### Data Cleaning Flow
 
 ```text
-Raw Data
-   ↓
-Missing Value Handling
-   ↓
-Duplicate Removal
-   ↓
-Data Type Correction
-   ↓
-Transformation
-   ↓
-Clean Data
+              📥 RAW DATA
+                   │
+                   ▼
+            🔍 DATA PROFILING
+                   │
+                   ▼
+            🧹 MISSING VALUES
+                   │
+                   ▼
+            🗑️ DUPLICATES
+                   │
+                   ▼
+             🔤 DATA TYPES
+                   │
+                   ▼
+            🔄 TRANSFORMATION
+                   │
+                   ▼
+              ✅ CLEAN DATA
 ```
 
 ---
@@ -350,18 +426,20 @@ Clean Data
 
 **Dataflows Gen2** provides a low-code approach to data ingestion and transformation.
 
-A typical workflow:
+### Workflow
 
 ```text
-Data Source
-     ↓
-Dataflow Gen2
-     ↓
-Transform Data
-     ↓
-Destination
-     ↓
-Lakehouse / Warehouse
+📥 DATA SOURCE
+      ↓
+🔀 DATAFLOW GEN2
+      ↓
+🧹 TRANSFORM
+      ↓
+🔍 VALIDATE
+      ↓
+📤 DESTINATION
+      ↓
+🏞️ LAKEHOUSE / 🗄️ WAREHOUSE
 ```
 
 It can be useful when transformations need to be performed without writing extensive code.
@@ -373,19 +451,29 @@ It can be useful when transformations need to be performed without writing exten
 The repository also explores the **Medallion Architecture**, a common approach for organizing data processing layers.
 
 ```text
-              Raw Data
-                 │
-                 ▼
-          🥉 Bronze Layer
-                 │
-                 ▼
-           🥈 Silver Layer
-                 │
-                 ▼
-             🥇 Gold Layer
-                 │
-                 ▼
-             Power BI
+                         📥 RAW DATA
+                              │
+                              ▼
+                    ┌─────────────────┐
+                    │ 🥉 BRONZE       │
+                    │ Raw Data        │
+                    └────────┬────────┘
+                             ↓
+                    ┌─────────────────┐
+                    │ 🥈 SILVER       │
+                    │ Cleaned Data    │
+                    └────────┬────────┘
+                             ↓
+                    ┌─────────────────┐
+                    │ 🥇 GOLD         │
+                    │ Business Data   │
+                    └────────┬────────┘
+                             ↓
+                    ┌─────────────────┐
+                    │ 📊 POWER BI     │
+                    └────────┬────────┘
+                             ↓
+                       💡 INSIGHTS
 ```
 
 ### 🥉 Bronze
@@ -399,24 +487,6 @@ Contains cleaned and transformed data.
 ### 🥇 Gold
 
 Contains business-ready and analytics-ready data.
-
-Example:
-
-```text
-Bronze
-  ↓
-Raw Sales Data
-
-Silver
-  ↓
-Clean Sales Data
-
-Gold
-  ↓
-Sales Summary
-Customer Insights
-Product Performance
-```
 
 ---
 
@@ -433,7 +503,23 @@ It allows users to work with:
 * Analytical queries
 * Data models
 
-Example:
+### Warehouse Workflow
+
+```text
+🏞️ SOURCE DATA
+      ↓
+🗄️ DATA WAREHOUSE
+      ↓
+🧮 SQL QUERIES
+      ↓
+📊 ANALYSIS
+      ↓
+🧠 SEMANTIC MODEL
+      ↓
+📈 POWER BI
+```
+
+### Example SQL
 
 ```sql
 SELECT
@@ -450,24 +536,50 @@ ORDER BY Total_Sales DESC;
 
 SQL can be used to analyze data stored in Fabric.
 
-Example:
-
 ```sql
 SELECT
     Customer_ID,
     COUNT(*) AS Total_Orders,
     SUM(Amount) AS Total_Spending
 FROM Orders
-GROUP BY Customer_ID;
+GROUP BY Customer_ID
+ORDER BY Total_Spending DESC;
 ```
 
 This can help generate business insights such as:
 
-* Top customers
-* Best-selling products
-* Total revenue
-* Order trends
-* Customer behavior
+* 👑 Top customers
+* 🏆 Best-selling products
+* 💰 Total revenue
+* 📈 Order trends
+* 👤 Customer behavior
+
+---
+
+# 🧠 Semantic Model
+
+A semantic model provides a business-oriented layer for analytical data.
+
+```text
+🏞️ LAKEHOUSE
+      │
+      ├──────────────┐
+      │              │
+      ▼              ▼
+🗄️ WAREHOUSE     📊 DATA
+      │              │
+      └──────┬───────┘
+             ↓
+      🧠 SEMANTIC MODEL
+             │
+      ┌──────┼──────┐
+      ▼      ▼      ▼
+    Sales  Customer Product
+      │      │      │
+      └──────┼──────┘
+             ↓
+         📊 POWER BI
+```
 
 ---
 
@@ -475,30 +587,32 @@ This can help generate business insights such as:
 
 Power BI is used to transform processed data into interactive reports and dashboards.
 
-Typical workflow:
+### Power BI Workflow
 
 ```text
-Data Source
-    ↓
-OneLake
-    ↓
-Lakehouse / Warehouse
-    ↓
-Semantic Model
-    ↓
-Power BI
-    ↓
-Dashboard / Report
+📥 DATA SOURCE
+      ↓
+🌐 ONELAKE
+      ↓
+🏞️ LAKEHOUSE / 🗄️ WAREHOUSE
+      ↓
+🧠 SEMANTIC MODEL
+      ↓
+📊 POWER BI
+      ↓
+📈 REPORT / DASHBOARD
+      ↓
+💡 BUSINESS INSIGHTS
 ```
 
 Power BI can be used for:
 
-* Interactive dashboards
-* Data visualization
-* KPI tracking
-* Business intelligence
-* Trend analysis
-* Decision making
+* 📊 Interactive dashboards
+* 📈 Data visualization
+* 🎯 KPI tracking
+* 💼 Business intelligence
+* 📉 Trend analysis
+* 💡 Decision making
 
 ---
 
@@ -506,31 +620,33 @@ Power BI can be used for:
 
 Common visualizations explored include:
 
-* Bar Charts
-* Line Charts
-* Pie / Donut Charts
-* Tables
-* Cards
-* KPI Indicators
-* Maps
-* Slicers
-* Interactive Filters
+* 📊 Bar Charts
+* 📈 Line Charts
+* 🥧 Pie / Donut Charts
+* 📋 Tables
+* 🎯 Cards
+* 📌 KPI Indicators
+* 🗺️ Maps
+* 🎚️ Slicers
+* 🔍 Interactive Filters
 
-Example dashboard structure:
+### Example Dashboard
 
 ```text
-┌──────────────────────────────────────────┐
-│             BUSINESS DASHBOARD           │
-├──────────┬──────────┬──────────┬─────────┤
-│ Revenue  │ Orders   │ Customers│ Growth  │
-├──────────┴──────────┴──────────┴─────────┤
-│                                          │
-│          Sales Trend                    │
-│                                          │
-├────────────────────┬─────────────────────┤
-│ Product Performance│ Customer Analysis   │
-│                    │                     │
-└────────────────────┴─────────────────────┘
+┌──────────────────────────────────────────────┐
+│             📊 BUSINESS DASHBOARD            │
+├────────────┬────────────┬─────────┬─────────┤
+│ 💰 Revenue │ 🛒 Orders  │ 👤 Users │ 📈 Growth│
+├────────────┴────────────┴─────────┴─────────┤
+│                                              │
+│              📈 SALES TREND                 │
+│                                              │
+├────────────────────────┬─────────────────────┤
+│ 📦 PRODUCT PERFORMANCE  │ 👤 CUSTOMER ANALYSIS│
+│                        │                     │
+├────────────────────────┴─────────────────────┤
+│              🎚️ FILTERS / SLICERS           │
+└──────────────────────────────────────────────┘
 ```
 
 ---
@@ -542,47 +658,47 @@ One of the main objectives of this repository is to understand how different Fab
 ### Complete Workflow
 
 ```text
-              DATA SOURCES
-                   │
-        ┌──────────┼──────────┐
-        │          │          │
-       CSV       SQL DB      API
-        │          │          │
-        └──────────┼──────────┘
-                   ▼
-             DATA FACTORY
-                   │
-                   ▼
-               PIPELINE
-                   │
-                   ▼
-                ONELAKE
-                   │
-                   ▼
-              LAKEHOUSE
-                   │
-                   ▼
-              NOTEBOOK
-                   │
-          ┌────────┴────────┐
-          ▼                 ▼
-       CLEANING         TRANSFORMATION
-          │                 │
-          └────────┬────────┘
-                   ▼
-             DELTA TABLE
-                   │
-                   ▼
-              DATA WAREHOUSE
-                   │
-                   ▼
-             SEMANTIC MODEL
-                   │
-                   ▼
-                POWER BI
-                   │
-                   ▼
-          BUSINESS INSIGHTS
+                     🌐 DATA SOURCES
+                            │
+              ┌─────────────┼─────────────┐
+              │             │             │
+             📁 CSV       🗄️ SQL        🌐 API
+              │             │             │
+              └─────────────┼─────────────┘
+                            ▼
+                     🔧 DATA FACTORY
+                            │
+                            ▼
+                       🔄 PIPELINE
+                            │
+                            ▼
+                         🌐 ONELAKE
+                            │
+                            ▼
+                       🏞️ LAKEHOUSE
+                            │
+                            ▼
+                        📓 NOTEBOOK
+                            │
+                  ┌─────────┴─────────┐
+                  ▼                   ▼
+              🧹 CLEANING       🔄 TRANSFORMATION
+                  │                   │
+                  └─────────┬─────────┘
+                            ▼
+                       🗃️ DELTA TABLE
+                            │
+                            ▼
+                      🗄️ DATA WAREHOUSE
+                            │
+                            ▼
+                      🧠 SEMANTIC MODEL
+                            │
+                            ▼
+                         📊 POWER BI
+                            │
+                            ▼
+                    💡 BUSINESS INSIGHTS
 ```
 
 ---
@@ -591,20 +707,20 @@ One of the main objectives of this repository is to understand how different Fab
 
 This repository contains practical exploration of Microsoft Fabric, including:
 
-### 1. Workspace Creation
+### 1. 🏢 Workspace Creation
 
 * Creating a Fabric workspace
 * Understanding workspace structure
 * Managing Fabric items
 
-### 2. Lakehouse
+### 2. 🏞️ Lakehouse
 
 * Creating a Lakehouse
 * Uploading files
 * Creating tables
 * Exploring Files and Tables sections
 
-### 3. Data Pipeline
+### 3. 🔄 Data Pipeline
 
 * Creating a pipeline
 * Adding activities
@@ -614,7 +730,7 @@ This repository contains practical exploration of Microsoft Fabric, including:
 * Running pipelines
 * Monitoring execution
 
-### 4. Notebook
+### 4. 📓 Notebook
 
 * Creating notebooks
 * Reading datasets
@@ -624,21 +740,21 @@ This repository contains practical exploration of Microsoft Fabric, including:
 * Creating tables
 * Saving processed data
 
-### 5. Dataflow Gen2
+### 5. 🔀 Dataflow Gen2
 
 * Creating dataflows
 * Connecting sources
 * Transforming data
 * Loading data into Fabric destinations
 
-### 6. Data Warehouse
+### 6. 🗄️ Data Warehouse
 
 * Creating warehouse objects
 * Creating tables
 * Running SQL queries
 * Performing analytical operations
 
-### 7. Power BI
+### 7. 📊 Power BI
 
 * Connecting to Fabric data
 * Creating semantic models
@@ -653,49 +769,57 @@ This repository contains practical exploration of Microsoft Fabric, including:
 ```text
 fabric_microsoft/
 │
-├── README.md
+├── 📄 README.md
 │
-├── architecture/
+├── 🏗️ architecture/
 │   ├── fabric_architecture.md
 │   ├── onelake.md
 │   └── medallion_architecture.md
 │
-├── workspaces/
+├── 🏢 workspaces/
 │   └── workspace_notes.md
 │
-├── lakehouse/
+├── 🌐 onelake/
+│   └── onelake_notes.md
+│
+├── 🏞️ lakehouse/
 │   ├── lakehouse_notes.md
 │   └── datasets/
 │
-├── pipelines/
+├── 🔄 pipelines/
 │   ├── pipeline_notes.md
 │   └── pipeline_workflows/
 │
-├── notebooks/
+├── 📓 notebooks/
 │   ├── data_cleaning.ipynb
 │   ├── data_transformation.ipynb
 │   └── data_analysis.ipynb
 │
-├── dataflows/
+├── 🔀 dataflows/
 │   └── dataflow_notes.md
 │
-├── warehouse/
+├── 🗄️ warehouse/
 │   ├── sql_queries.sql
 │   └── warehouse_notes.md
 │
-├── powerbi/
+├── 🧠 semantic_models/
+│   └── model_notes.md
+│
+├── 📊 powerbi/
 │   ├── dashboards/
 │   └── reports/
 │
-├── datasets/
+├── 📁 datasets/
 │   ├── raw/
 │   └── processed/
 │
-└── screenshots/
+└── 📸 screenshots/
     ├── workspace/
+    ├── onelake/
     ├── lakehouse/
     ├── pipelines/
     ├── notebooks/
+    ├── warehouse/
     └── powerbi/
 ```
 
@@ -705,19 +829,35 @@ fabric_microsoft/
 
 Through this repository, I aim to develop practical knowledge of:
 
-* Modern data platforms
-* Cloud data engineering
-* Data ingestion
-* ETL / ELT pipelines
-* Data transformation
-* Data lake architecture
-* Data warehousing
-* Distributed data processing
-* PySpark
-* SQL analytics
-* Business intelligence
-* Data visualization
-* End-to-end analytics workflows
+```text
+☁️ Modern Data Platforms
+        ↓
+🔧 Data Engineering
+        ↓
+📥 Data Ingestion
+        ↓
+🔄 ETL / ELT
+        ↓
+🧹 Data Cleaning
+        ↓
+⚙️ Data Transformation
+        ↓
+🌐 Data Lake Architecture
+        ↓
+🏞️ Lakehouse Architecture
+        ↓
+🗄️ Data Warehousing
+        ↓
+🐍 PySpark
+        ↓
+🧮 SQL Analytics
+        ↓
+📊 Business Intelligence
+        ↓
+📈 Data Visualization
+        ↓
+💡 Business Insights
+```
 
 ---
 
@@ -746,16 +886,60 @@ Modern analytics platforms require proper data management.
 
 Important areas include:
 
-* Data security
-* Access management
-* Data governance
-* Data quality
-* Data lineage
-* Data monitoring
-* Workspace management
-* Controlled data access
+* 🔐 Data security
+* 👥 Access management
+* 🏛️ Data governance
+* ✅ Data quality
+* 🔗 Data lineage
+* 📊 Data monitoring
+* 🏢 Workspace management
+* 🛡️ Controlled data access
 
-These concepts are important for building reliable and scalable analytics solutions.
+These concepts are important for building reliable, secure, and scalable analytics solutions.
+
+---
+
+# 🗺️ Microsoft Fabric Learning Roadmap
+
+```text
+                         🚀 MICROSOFT FABRIC
+                                  │
+                                  ▼
+                           🏢 WORKSPACES
+                                  │
+                                  ▼
+                              🌐 ONELAKE
+                                  │
+                                  ▼
+                           🏞️ LAKEHOUSE
+                                  │
+                                  ▼
+                         🔧 DATA FACTORY
+                                  │
+                                  ▼
+                            🔄 PIPELINES
+                                  │
+                                  ▼
+                            📓 NOTEBOOKS
+                                  │
+                                  ▼
+                        ⚙️ DATA ENGINEERING
+                                  │
+                                  ▼
+                         🗄️ DATA WAREHOUSE
+                                  │
+                                  ▼
+                              🧮 SQL
+                                  │
+                                  ▼
+                         🧠 SEMANTIC MODEL
+                                  │
+                                  ▼
+                            📊 POWER BI
+                                  │
+                                  ▼
+                           💡 INSIGHTS
+```
 
 ---
 
@@ -763,57 +947,97 @@ These concepts are important for building reliable and scalable analytics soluti
 
 Planned additions to this repository include:
 
-* Advanced Data Factory pipelines
-* Parameterized pipelines
-* Pipeline monitoring
-* Advanced PySpark transformations
-* Incremental data loading
-* Medallion Architecture implementation
-* Data Warehouse projects
-* Advanced SQL analytics
-* Power BI dashboards
-* Real-time analytics
-* Data science workflows
-* End-to-end business intelligence projects
-* Microsoft Fabric best practices
+* 🔄 Advanced Data Factory pipelines
+* 🎛️ Parameterized pipelines
+* 📊 Pipeline monitoring
+* 🐍 Advanced PySpark transformations
+* 📥 Incremental data loading
+* 🥇 Medallion Architecture implementation
+* 🗄️ Data Warehouse projects
+* 🧮 Advanced SQL analytics
+* 📊 Power BI dashboards
+* ⚡ Real-time analytics
+* 🤖 Data science workflows
+* 🔁 End-to-end business intelligence projects
+* 📚 Microsoft Fabric best practices
 
 ---
 
 # 🏆 Skills Demonstrated
 
-This repository demonstrates practical exposure to:
+<div align="center">
 
-**Microsoft Fabric • OneLake • Lakehouse • Data Factory • Pipelines • Dataflows Gen2 • Notebooks • PySpark • SQL • Data Engineering • Data Warehousing • Power BI • Data Visualization • ETL/ELT • Data Analytics**
+**Microsoft Fabric** • **OneLake** • **Lakehouse** • **Data Factory** • **Pipelines** • **Dataflows Gen2** • **Notebooks** • **PySpark** • **SQL** • **Data Engineering** • **Data Warehousing** • **Semantic Modeling** • **Power BI** • **Data Visualization** • **ETL/ELT** • **Data Analytics**
+
+</div>
 
 ---
 
 # 📌 Repository Purpose
 
-This repository serves as a **learning portfolio and practical reference for Microsoft Fabric**. It documents my journey from understanding Fabric fundamentals to building complete data workflows involving ingestion, transformation, storage, analysis, and visualization.
+This repository serves as a **learning portfolio and practical reference for Microsoft Fabric**.
+
+It documents my journey from understanding Fabric fundamentals to building complete data workflows involving:
+
+```text
+📥 INGEST
+   ↓
+🌐 STORE
+   ↓
+🧹 CLEAN
+   ↓
+🔄 TRANSFORM
+   ↓
+⚙️ PROCESS
+   ↓
+🗄️ ANALYZE
+   ↓
+📊 VISUALIZE
+   ↓
+💡 INSIGHTS
+```
 
 > **Learn → Build → Analyze → Visualize → Improve**
 
 ---
 
-## ⭐ If You Find This Repository Useful
+# ⭐ If You Find This Repository Useful
 
-If this repository helps you understand Microsoft Fabric or its components, consider giving it a ⭐ **Star** and exploring the projects and examples available in the repository.
-
----
-
-## 👨‍💻 Author
-
-**Gyan Prakash Patel**
-
-B.Tech (Hons.) – Computer Science & Engineering
-**Specialization:** Data Science & Artificial Intelligence
-
-Interested in:
-
-**Data Analytics | Data Engineering | Microsoft Fabric | SQL | Python | Power BI | Artificial Intelligence**
+If this repository helps you understand **Microsoft Fabric, Data Engineering, Data Analytics, or Business Intelligence**, consider giving it a ⭐ **Star** and exploring the projects and examples available in the repository.
 
 ---
 
-## 📜 Disclaimer
+# 👨‍💻 Author
 
-This repository is created for **educational, learning, and portfolio purposes**. The examples and implementations are intended to demonstrate concepts and practical workflows using Microsoft Fabric.
+<div align="center">
+
+## **Gyan Prakash Patel**
+
+**B.Tech (Hons.) – Computer Science & Engineering**
+**Specialization: Data Science & Artificial Intelligence**
+
+### 💻 Data Analytics | 🔧 Data Engineering | ☁️ Microsoft Fabric | 🧮 SQL | 🐍 Python | 📊 Power BI | 🤖 AI
+
+</div>
+
+---
+
+# 📜 Disclaimer
+
+This repository is created for **educational, learning, and portfolio purposes**.
+
+The examples and implementations are intended to demonstrate concepts and practical workflows using **Microsoft Fabric**.
+
+---
+
+<div align="center">
+
+### ☁️ Microsoft Fabric
+
+**From Data → to Insights**
+
+**📥 Ingest → 💾 Store → 🔄 Transform → 🧮 Analyze → 📊 Visualize → 💡 Decide**
+
+⭐ **Keep Learning • Keep Building • Keep Analyzing** ⭐
+
+</div>
